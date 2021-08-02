@@ -1,14 +1,20 @@
 <h1>Add User</h1>
-<form #recievedUser="ngForm">
+  <form #recievedUser="ngForm" fxLayoutAlign = "stretch" fxLayout="column"> 
+  <mat-form-field  >
+    <input matInput type="text" class="form-control" id="name" placeholder="user name" [(ngModel)]="user.name" name="name">
+  </mat-form-field>
+  
+  <mat-form-field  >
+    <input  matInput type="text" class="form-control" id="type" placeholder="type name" [(ngModel)]="user.type" name="name">
+  </mat-form-field>
 
-  <label for="name">Name</label>
-  <input type="text" class="form-control" id="name" placeholder="user name" [(ngModel)]="user.name" name="name">
+  <mat-form-field  >
+    <input matInput type="password" class="form-control" id="password" placeholder="password" [(ngModel)]="user.password" name="password">
+  </mat-form-field>
+  
 
-  <label for="type">Type</label>
-  <input type="text" class="form-control" id="type" placeholder="type name" [(ngModel)]="user.type" name="name">
-
-  <label for="password">Password</label>
-  <input type="password" class="form-control" id="password" placeholder="password" [(ngModel)]="user.password" name="password">
+  
+ 
 
    <br>
   <button type="button" class="btn btn-success" (click)="addUser()">Save</button>

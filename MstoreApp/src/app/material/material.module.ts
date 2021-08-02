@@ -6,13 +6,17 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-const matModules = [MatSliderModule,
+import {MatMenuModule} from '@angular/material/menu';
+
+const matModules = [
+  MatSliderModule,
   MatFormFieldModule,
   MatInputModule,
   MatCardModule,
   MatButtonModule,
   MatToolbarModule,
-  MatIconModule
+  MatIconModule,
+  MatMenuModule
 ]
 
 @NgModule({

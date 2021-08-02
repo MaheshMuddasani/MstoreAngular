@@ -14,6 +14,6 @@ export class LoginComponent implements OnInit {
   }
 
   loginUser(){
-    this.router.navigate(['workarea']);
+    this.router.navigate(['workarea','admin', 'products']);
   }
 }

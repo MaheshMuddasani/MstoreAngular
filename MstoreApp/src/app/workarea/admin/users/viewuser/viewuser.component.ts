@@ -28,7 +28,7 @@ export class ViewuserComponent implements OnInit {
     this.httpClientService.deleteUser(this.user.id).subscribe(
       (user) => {
         this.userDeletedEvent.emit();
-        this.router.navigate(['admin', 'users']);
+        this.router.navigate(['workarea','admin', 'users']);
       }
     );
   }

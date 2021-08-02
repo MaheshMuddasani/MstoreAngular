@@ -13,6 +13,7 @@ export class AddproductComponent implements OnInit {
 
   @Input()
   product: Product;
+  
   private selectedFile;
   imgURL: any;
 
@@ -42,7 +43,7 @@ export class AddproductComponent implements OnInit {
 
     const uploadData = new FormData();
     uploadData.append('imageFile', this.selectedFile, this.selectedFile.name);
-    this.selectedFile.imageName = this.selectedFile.name;
+   this.selectedFile.imageName = this.selectedFile.name;
 
     this.httpClient.post('http://localhost:8080/products/upload', uploadData, { observe: 'response' })
       .subscribe((response) => {
@@ -50,7 +51,7 @@ export class AddproductComponent implements OnInit {
           this.httpClientService.addProduct(this.product).subscribe(
             (book) => {
               this.productAddedEvent.emit();
-              this.router.navigate(['admin', 'products']);
+              this.router.navigate(['workarea','admin', 'products']);
             }
           );
           console.log('Image uploaded successfully');

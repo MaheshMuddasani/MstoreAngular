@@ -14,9 +14,10 @@ import { UsersComponent } from './workarea/admin/users/users.component';
 import { AdduserComponent } from './workarea/admin/users/adduser/adduser.component';
 import { ProductComponent } from './workarea/admin/product/product.component';
 import { ViewuserComponent } from './workarea/admin/users/viewuser/viewuser.component';
-import { ViewproductComponent } from './workarea/admin/products/viewproduct/viewproduct.component';
+
 import { AddproductComponent } from './workarea/admin/product/addproduct/addproduct.component';
 import { MenuComponent } from './workarea/admin/menu/menu.component';
+import { ViewproductComponent } from './workarea/admin/product/viewproduct/viewproduct.component';
 
 
 @NgModule({

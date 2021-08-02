@@ -65,11 +65,11 @@ export class ProductComponent implements OnInit {
 
   addProduct() {
     this.selectedProduct = new Product();
-    this.router.navigate(['admin', 'products'], { queryParams: { action: 'add' } });
+    this.router.navigate(['workarea','admin', 'products'], { queryParams: { action: 'add' } });
   }
 
   viewProduct(id: number) {
-    this.router.navigate(['admin', 'products'], { queryParams: { id, action: 'view' } });
+    this.router.navigate(['workarea','admin', 'products'], { queryParams: { id, action: 'view' } });
   }
 
 }
