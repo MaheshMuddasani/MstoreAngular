@@ -18,6 +18,7 @@ import { ViewuserComponent } from './workarea/admin/users/viewuser/viewuser.comp
 import { AddproductComponent } from './workarea/admin/product/addproduct/addproduct.component';
 import { MenuComponent } from './workarea/admin/menu/menu.component';
 import { ViewproductComponent } from './workarea/admin/product/viewproduct/viewproduct.component';
+import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ViewproductComponent } from './workarea/admin/product/viewproduct/viewp
     AddproductComponent,
     ViewproductComponent,
     LoginComponent,
-    WorkareaComponent
+    WorkareaComponent,
+    QuestionnaireComponent
     
   ],
   imports: [
